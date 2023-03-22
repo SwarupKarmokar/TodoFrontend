@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 2rem;
+  color: white;
+}
+
+.top {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: center;
+}
+
+input {
+  outline: none;
+  width: 400px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: lightblue;
+  transition: .3s ease-in-out;
+}
+
+button:hover {
+  background-color: lightgreen;
+  color: white;
+  cursor: pointer;
+}
+
+.todo {
+  background-color: gray;
+  color: #000;
+  margin-top: 15px;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: transparent;
+  border: .5px solid #000;
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.task.complete .checkbox {
+  background-color: green;
+}
+
+.task.complete .text {
+  text-decoration: line-through;
+  text-decoration-color: lightcoral;
+}
